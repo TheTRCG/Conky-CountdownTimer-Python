@@ -8,6 +8,8 @@ Make the script executable using ```chmod +x countdown.py```
 
 Run the script and use the function settime to set the desired countdown time in the format ```YYYY-MM-DD HH-MM```
 
+The script will store the date time in home directory using a hidden text file ```.cdd.txt```
+
 Add the following line to conky:
 
 ```${execi 30 /bin/python3 ~/.countdown/countdown.py}```
